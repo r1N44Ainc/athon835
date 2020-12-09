@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} NSTU Teachers List {% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h2>NSTU Teachers</h2>
+    {% for el in teacher_list %}
+    <div class="alert alert-info">
+        <h5>
+            {{ el.name }}
+        </h5>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}
